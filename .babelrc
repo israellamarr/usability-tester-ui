@@ -1,0 +1,15 @@
+{
+  "presets": [
+    "flow",
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": ["last 4 versions", "ie >= 7"]
+        }
+      }
+    ],
+    "stage-0",
+    "react"
+  ]
+}

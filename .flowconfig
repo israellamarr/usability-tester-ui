@@ -1,0 +1,15 @@
+[ignore]
+.*/dist/.*
+.*/node_modules/nock/.*
+.*/tpl/.*
+
+[include]
+.*/src/flow/.*
+
+[libs]
+
+[options]
+module.name_mapper='^app\/\(.*\)$' -> '<PROJECT_ROOT>/src/\1'
+module.name_mapper='^static\/\(.*\)$' -> '<PROJECT_ROOT>/static/\1'
+module.name_mapper.extension='css' -> '<PROJECT_ROOT>/src/flow/static.js'
+module.name_mapper.extension='scss' -> '<PROJECT_ROOT>/src/flow/static.js'

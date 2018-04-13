@@ -1,0 +1,30 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:flowtype/recommended"
+  ],
+  "plugins": [
+    "react",
+    "flowtype"
+  ],
+  "ecmaFeatures": {
+    "browser": true,
+    "jsx": true
+  },
+  "rules": {
+    "semi": 2
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "browser": true,
+    "$": true,
+    "describe": true,
+    "it": true,
+    "expect": true
+  }
+}
